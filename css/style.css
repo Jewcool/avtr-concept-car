@@ -26,6 +26,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+img {
+  max-width: 100%;
+}
 button {
   background-color: transparent;
   border: none;
@@ -217,6 +220,9 @@ ul {
   display: flex;
   align-items: flex-end;
 }
+.design_interior-img {
+  grid-column: 2/-1;
+}
 .design_cell-text {
   margin-bottom: 15px;
 }
@@ -256,10 +262,115 @@ ul {
   margin-bottom: 15px; 
 }
 .design_img {
-   max-width: 100%;
-   display: block;
-   object-fit: cover;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  margin: o auto;
 }
+
+@media (max-width: 1366px) {
+  .footer_inner {
+    height: 150px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .design_interior {
+    display: block;
+  }
+  .design_interior-img {
+    width: 100%;
+    margin-bottom: 25px; 
+  }
+  .design_cell-three .design_interior-img {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .header_logo {
+    margin-left: 0;
+  }
+  .logo_img {
+    width: 180px;
+  }
+  .list_item + .list_item {
+    margin-left: 15px;
+  }
+  .list_link {
+    width: 35px;
+    height: 35px;
+  }
+  .title {
+    font-size: 55px;
+  }
+  .title_descr {
+    font-size: 18px;
+  }
+  .concept {
+    padding-top: 75px;
+    margin-bottom: 75px;
+  }
+  .concept_text {
+    font-size: 16px;
+  }
+  .premier_inner {
+    display: block;
+  }
+  .premier,
+  .video {
+    margin-bottom: 75px;
+  }
+  .premier_img {
+    width: 100%;
+    margin-top: 25px; 
+  }
+  .design_box {
+    margin: 75px auto;
+    display: block;
+  }
+  .design_box-column {
+    width: 100%; 
+  }
+}
+@media (max-width: 620px) {
+  .footer_inner {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .footer .list {
+    width: 100%;
+    margin-top: 0px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 520px) {
+  .header_top {
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  .list {
+    justify-content: center;
+    padding-top: 10px;
+    width: 100%;
+  } 
+  .footer_inner {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 360px) {
+  .design-slider_item {
+    margin: 0;
+  }
+  .slick-track {
+    margin-left: 0;
+  }
+}
+
  
 
 
